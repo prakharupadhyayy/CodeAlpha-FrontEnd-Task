@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Image Gallery</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Image Gallery</h1>
+  <p>Filter by category, then click any image to open the lightbox.</p>
+  <div class="filters" id="filters" role="group" aria-label="Filter images"></div>
+</header>
+<main class="grid" id="grid"></main>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <button class="close" id="close" aria-label="Close">&times;</button>
+  <button class="prev" id="prev" aria-label="Previous image">&#8249;</button>
+  <figure>
+    <img id="lbImg" alt="">
+    <figcaption id="lbCap"></figcaption>
+  </figure>
+  <button class="next" id="next" aria-label="Next image">&#8250;</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
